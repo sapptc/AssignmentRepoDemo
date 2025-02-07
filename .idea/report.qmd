@@ -1,0 +1,43 @@
+---
+title: Medication Adherence System
+authors: 
+    - name: Tyler Sapp
+      email: sapptc@vcu.edu
+---
+# What The Medication Adherence System Is
+This platform will help patients adhere to their medication schedules by providing timely reminders, tracking adherence, and generating reports for healthcare providers.
+
+## Data Flow Diagram in Mermaid
+This is a mermaid diagram to show Level 0 DFD for medication adherence.
+```{mermaid}
+flowchart TD
+    %% External Entities
+    Patient[Patient]
+    Provider[Healthcare Provider]
+
+    %% Processes
+    Reminders[Medication Reminder Process]
+    Tracker[Adherence Tracking Process]
+    Reporter[Report Generation Process]
+
+    %% Data Stores
+    MedSchedule[Medication Schedule Store]
+    AdherenceRecords[Adherence Records Store]
+    PatientData[Patient Data Store]
+    Reports[Reports Archive]
+
+    %% Data Flows
+    Patient -- "Receives medication reminders" --> Reminders
+    Reminders -- "Queries schedule" --> MedSchedule
+    Reminders -- "Sends reminders" --> Patient
+
+    Patient -- "Submits adherence confirmation" --> Tracker
+    Tracker -- "Logs adherence data" --> AdherenceRecords
+    Tracker -- "Accesses patient info" --> PatientData
+
+    AdherenceRecords -- "Provides adherence data" --> Reporter
+    PatientData -- "Provides patient info" --> Reporter
+    Reporter -- "Generates report" --> Reports
+    Reports -- "Sends report" --> Provider
+
+```
