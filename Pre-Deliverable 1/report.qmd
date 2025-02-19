@@ -4,9 +4,14 @@ title: Pre-Deliverable 1
 author:
     - name: Tyler Sapp
       email: sapptc@vcu.edu
+format:      
+  pdf: 
+    geometry: 
+      - top=30mm
+      - left=20mm
 ---
 # Pre Deliverable 1: Medication Adherence System Process Diagram
-
+This report provides a comprehensive overview of the Medication Adherence System (MAS) through various diagrams and structured English descriptions. It includes a context diagram, Data Flow Diagrams (DFD) at levels 0 and 1, and detailed descriptions of the processes involved in the system. The report aims to illustrate the system's functionality, data flow, and interactions with external entities, helping to understand the overall architecture and specific operations within the MAS.
 
 ## Link to Visual Paradigm DFD Diagram
 [[DFD Levels 0 and 1](https://online.visual-paradigm.com/share.jsp?id=333836343436322d31)]
