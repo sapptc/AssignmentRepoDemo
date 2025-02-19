@@ -10,18 +10,18 @@
 
 <title>Pre-Deliverable 1</title>
 <style>
-code{white-space: pre-wrap;}
-span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
-div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-ul.task-list{list-style: none;}
-ul.task-list li input[type="checkbox"] {
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  div.columns{display: flex; gap: min(4vw, 1.5em);}
+  div.column{flex: auto; overflow-x: auto;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+  ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-</style>
+  }
+  </style>
 
 
 <script src="report_files/libs/clipboard/clipboard.min.js"></script>
@@ -44,106 +44,42 @@ ul.task-list li input[type="checkbox"] {
 
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Pre-Deliverable 1</h1>
-</div>
 
 
 
-<div class="quarto-title-meta">
-
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Tyler Sapp <a href="mailto:sapptc@vcu.edu" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
-          </div>
-  </div>
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
+<hr>
+<p>title: Pre-Deliverable 1 format: html: toc: true html-math-method: katex css: styles.css author: - name: Tyler Sapp email: sapptc@vcu.edu</p>
+<hr>
 <section id="pre-deliverable-1-medication-adherence-system-process-diagram" class="level1">
 <h1>Pre Deliverable 1: Medication Adherence System Process Diagram</h1>
 <section id="link-to-visual-paradigm-dfd-diagram" class="level2">
 <h2 class="anchored" data-anchor-id="link-to-visual-paradigm-dfd-diagram">Link to Visual Paradigm DFD Diagram</h2>
 <p>[<a href="https://online.visual-paradigm.com/share.jsp?id=333836343436322d31">DFD Levels 0 and 1</a>]</p>
 </section>
-<section id="context-level-diagram" class="level2">
-<h2 class="anchored" data-anchor-id="context-level-diagram">Context Level Diagram</h2>
-<p><img src="../assets/MAS%20Context%20Diagram.jpg" class="img-fluid" alt="Context Diagram made in Visual Paradigm"> A context diagram is a high-level, visual representation of a system that shows the system’s boundaries and its interactions with external entities. It typically includes the system as a single process and the external entities that interact with it, such as users, other systems, or external organizations. The context diagram helps to provide a clear and concise overview of the system’s scope and its relationships with the external environment.</p>
+<section id="context-diagram" class="level2">
+<h2 class="anchored" data-anchor-id="context-diagram">Context Diagram</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/MAS%20Context%20Diagram.jpg" class="img-fluid figure-img"></p>
+<figcaption>Context Diagram made in Visual Paradigm</figcaption>
+</figure>
+</div>
 </section>
 <section id="dfd-level-0" class="level2">
 <h2 class="anchored" data-anchor-id="dfd-level-0">DFD Level 0</h2>
-<p><img src="../assets/MAS%20DFD%20Level%200.jpg" class="img-fluid" alt="Level 0 DFD made in Visual Paradigm"> A Data Flow Diagram (DFD) Level 0 is a lot like a Context Level diagram in which it provides a broad overview of the system and its interactions with external entities. It breaks down the main process into sub-processes, showing the flow of data between them. This level of DFD includes the major processes, data stores, data flows, and external entities. It helps to understand the overall functionality of the system and how data moves through it.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/MAS%20DFD%20Level%200.jpg" class="img-fluid figure-img"></p>
+<figcaption>Level 0 DFD made in Visual Paradigm</figcaption>
+</figure>
+</div>
 </section>
 <section id="dfd-level-1" class="level2">
 <h2 class="anchored" data-anchor-id="dfd-level-1">DFD Level 1</h2>
-<p>A Data Flow Diagram (DFD) Level 1 provides a more detailed breakdown of the processes identified in the Level 0 DFD. It decomposes each major process into sub-processes, showing the flow of data between them and the data stores involved. This level of DFD helps to understand the specific operations within each major process and how data is processed and transferred at a more granular level.</p>
-<section id="medication-reminder-process" class="level3">
-<h3 class="anchored" data-anchor-id="medication-reminder-process">1.0 Medication Reminder Process</h3>
-<p><img src="../assets/MAS%20Level%201%201.jpg" class="img-fluid" alt="Level 1 DFD for Medication Reminder Process"> The Level 1 DFD for the Medication Reminder Process provides a detailed breakdown of the steps involved in sending medication reminders to patients. It includes sub-processes such as querying the medication schedule, sending reminders, and optionally logging the reminders. This detailed view helps to understand the specific operations within the Medication Reminder Process and how data flows between them.</p>
-</section>
-<section id="adherence-tracking-process" class="level3">
-<h3 class="anchored" data-anchor-id="adherence-tracking-process">2.0 Adherence Tracking Process</h3>
-<p><img src="../assets/MAS%20Level%201%202.jpg" class="img-fluid" alt="Level 1 DFD for Adherence Tracking Process"> The Level 1 DFD for the Adherence Tracking Process provides a detailed breakdown of the steps involved in receiving and recording adherence confirmations from patients. It includes sub-processes such as receiving confirmation, storing adherence data, and optionally sending adherence information to healthcare providers. This detailed view helps to understand the specific operations within the Adherence Tracking Process and how data flows between them.</p>
-</section>
-<section id="reports-generation-process" class="level3">
-<h3 class="anchored" data-anchor-id="reports-generation-process">3.0 Reports Generation Process</h3>
-<p><img src="../assets/MAS%20Level%201%203.jpg" class="img-fluid" alt="Level 1 DFD for Reports Generation Process"> The Level 1 DFD for the Reports Generation Process provides a detailed breakdown of the steps involved in compiling adherence data into reports for healthcare providers. It includes sub-processes such as retrieving adherence data, generating the report, and storing and sending the report. This detailed view helps to understand the specific operations within the Reports Generation Process and how data flows between them.</p>
-</section>
-<section id="user-data-storing-process" class="level3">
-<h3 class="anchored" data-anchor-id="user-data-storing-process">4.0 User Data Storing Process</h3>
-<p><img src="../assets/MAS%20Level%201%204.jpg" class="img-fluid" alt="Level 1 DFD for User Data Storing Process"> The Level 1 DFD for the User Data Storing Process provides a detailed breakdown of the steps involved in managing patient information. It includes sub-processes such as receiving and validating patient data, storing the data, and allowing healthcare providers to access the data. This detailed view helps to understand the specific operations within the User Data Storing Process and how data flows between them.</p>
-</section>
-</section>
-<section id="structured-english" class="level2">
-<h2 class="anchored" data-anchor-id="structured-english">Structured English</h2>
-<section id="level-0-dfd-structured-english" class="level3">
-<h3 class="anchored" data-anchor-id="level-0-dfd-structured-english">Level 0 DFD Structured English</h3>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 10%">
-<col style="width: 27%">
-<col style="width: 62%">
-</colgroup>
-<thead>
-<tr class="header">
-<th><strong>Process</strong></th>
-<th><strong>Purpose</strong></th>
-<th><strong>Steps</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>1.0 – Medication Reminder Process</strong></td>
-<td>Sends medication reminders to patients based on a predefined schedule.</td>
-<td>1. <strong>Query Schedule</strong>: Retrieve upcoming medication times from the <strong>Medication Schedule Store</strong>.<br>2. <strong>Send Reminder</strong>: For each medication time due, send a reminder notification to the <strong>Patient</strong>.<br>3. <strong>(Optional) Log Reminders</strong>: Store record if necessary.</td>
-</tr>
-<tr class="even">
-<td><strong>2.0 – Adherence Tracking Process</strong></td>
-<td>Receives and records adherence confirmations from patients. Optionally sends real-time updates to healthcare providers.</td>
-<td>1. <strong>Receive Confirmation</strong>: Accept adherence confirmation from the <strong>Patient</strong>.<br>2. <strong>Store Adherence Data</strong>: Save adherence details in the <strong>Adherence Records Store</strong>.<br>3. <strong>Send Adherence Info</strong>: Forward data to the <strong>Healthcare Provider</strong>, if configured.</td>
-</tr>
-<tr class="odd">
-<td><strong>3.0 – Report Generation Process</strong></td>
-<td>Compiles adherence data into reports for healthcare providers.</td>
-<td>1. <strong>Retrieve Adherence Data</strong>: Access the <strong>Adherence Records Store</strong>.<br>2. <strong>Generate Report</strong>: Compile the data into a structured report.<br>3. <strong>Store and Send Report</strong>: Save the final report in the <strong>Reports Archive</strong> and deliver it to the <strong>Healthcare Provider</strong>.</td>
-</tr>
-<tr class="even">
-<td><strong>4.0 – User Data Storing Process</strong></td>
-<td>Manages patient information; allows patients to submit personal data and healthcare providers to access it.</td>
-<td>1. <strong>Patient Data Submission</strong>: Receive and validate data from the <strong>Patient</strong>; store in the <strong>Patient Data Store</strong> if valid.<br>2. <strong>Healthcare Provider Access</strong>: Verify credentials and retrieve patient data for authorized providers.</td>
-</tr>
-</tbody>
-</table>
-</section>
+<p>### 1.0 Medication Reminder Process</p>
+<p>### 2.0 Adherence Tracking Process</p>
+<p>### 3.0 Reports Generation Process</p>
+<p>### 4.0 User Data Storing Process</p>
 </section>
 </section>
 
