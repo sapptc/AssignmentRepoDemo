@@ -1,0 +1,62 @@
+Processes:
+
+1. Medication Reminder Process
+```
+FOR each medication record in Medication Schedule Store DO
+    IF the current time equals the scheduled medication time THEN
+        SEND a medication reminder to the Patient.
+        LOG the reminder event (if necessary).
+    END IF.
+END FOR.
+```
+2. Adherence Tracking Process
+```
+WHEN a medication reminder is sent to the Patient DO
+    WAIT for an adherence confirmation response.
+    IF the Patient confirms medication intake THEN
+        RECORD the confirmation in the Adherence Records Store.
+        RETRIEVE related patient details from the Patient Data Store.
+    ELSE
+        LOG non-adherence or missed medication event.
+    END IF.
+END.
+```
+
+3. Report Generation Process
+```
+AT predetermined intervals OR upon request DO
+    RETRIEVE all relevant adherence records from the Adherence Records Store.
+    RETRIEVE patient details from the Patient Data Store.
+    COMPILE the adherence data and patient information into a comprehensive report.
+    STORE the generated report in the Reports Archive.
+    SEND the report to the Healthcare Provider.
+END.
+```
+
+4. User Data Storage Process
+4a. Patient Data Submission
+```
+WHEN a patient submits personal or medical data DO:
+    VALIDATE the provided data for completeness and correctness.
+    IF the data is valid THEN:
+        STORE the data in the Patient Data Store.
+        NOTIFY the patient that the data has been stored successfully.
+    ELSE:
+        RETURN an error message indicating that the data is incomplete or incorrect.
+    END IF.
+END.
+```
+
+4b. Healthcare Provider Data Access
+```
+WHEN a healthcare provider requests access to patient data DO:
+    VERIFY the healthcare provider's access credentials.
+    IF the credentials are valid THEN:
+        RETRIEVE the requested patient data from the Patient Data Store.
+        DELIVER the retrieved data to the healthcare provider.
+    ELSE:
+        RETURN an error message indicating insufficient permissions.
+    END IF.
+END.
+```
+

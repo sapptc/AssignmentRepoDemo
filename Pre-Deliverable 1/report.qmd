@@ -1,0 +1,56 @@
+---
+title: Pre-Deliverable 1
+
+author:
+    - name: Tyler Sapp
+      email: sapptc@vcu.edu
+---
+# Pre Deliverable 1: Medication Adherence System Process Diagram
+
+
+## Link to Visual Paradigm DFD Diagram
+[[DFD Levels 0 and 1](https://online.visual-paradigm.com/share.jsp?id=333836343436322d31)]
+
+## Context Level Diagram
+![Context Diagram made in Visual Paradigm](../assets/MAS%20Context%20Diagram.jpg)
+A context diagram is a high-level, visual representation of a system that shows the system's boundaries and its interactions with external entities. It typically includes the system as a single process and the external entities that interact with it, such as users, other systems, or external organizations. The context diagram helps to provide a clear and concise overview of the system's scope and its relationships with the external environment.
+
+## DFD Level 0
+![Level 0 DFD made in Visual Paradigm](../assets/MAS%20DFD%20Level%200.jpg)
+A Data Flow Diagram (DFD) Level 0 is a lot like a Context Level diagram in which it  provides a broad overview of the system and its interactions with external entities. It breaks down the main process into sub-processes, showing the flow of data between them. This level of DFD includes the major processes, data stores, data flows, and external entities. It helps to understand the overall functionality of the system and how data moves through it.
+
+## DFD Level 1
+A Data Flow Diagram (DFD) Level 1 provides a more detailed breakdown of the processes identified in the Level 0 DFD. It decomposes each major process into sub-processes, showing the flow of data between them and the data stores involved. This level of DFD helps to understand the specific operations within each major process and how data is processed and transferred at a more granular level.
+
+### 1.0 Medication Reminder Process
+
+![Level 1 DFD for Medication Reminder Process](../assets/MAS%20Level%201%201.jpg)
+The Level 1 DFD for the Medication Reminder Process provides a detailed breakdown of the steps involved in sending medication reminders to patients. It includes sub-processes such as querying the medication schedule, sending reminders, and optionally logging the reminders. This detailed view helps to understand the specific operations within the Medication Reminder Process and how data flows between them.
+
+### 2.0 Adherence Tracking Process
+
+![Level 1 DFD for Adherence Tracking Process](../assets/MAS%20Level%201%202.jpg)
+The Level 1 DFD for the Adherence Tracking Process provides a detailed breakdown of the steps involved in receiving and recording adherence confirmations from patients. It includes sub-processes such as receiving confirmation, storing adherence data, and optionally sending adherence information to healthcare providers. This detailed view helps to understand the specific operations within the Adherence Tracking Process and how data flows between them.
+
+### 3.0 Reports Generation Process
+
+![Level 1 DFD for Reports Generation Process](../assets/MAS%20Level%201%203.jpg)
+The Level 1 DFD for the Reports Generation Process provides a detailed breakdown of the steps involved in compiling adherence data into reports for healthcare providers. It includes sub-processes such as retrieving adherence data, generating the report, and storing and sending the report. This detailed view helps to understand the specific operations within the Reports Generation Process and how data flows between them.
+
+### 4.0 User Data Storing Process
+
+![Level 1 DFD for User Data Storing Process](../assets/MAS%20Level%201%204.jpg)
+The Level 1 DFD for the User Data Storing Process provides a detailed breakdown of the steps involved in managing patient information. It includes sub-processes such as receiving and validating patient data, storing the data, and allowing healthcare providers to access the data. This detailed view helps to understand the specific operations within the User Data Storing Process and how data flows between them.
+
+## Structured English
+
+
+### Level 0 DFD Structured English
+
+| **Process**                                   | **Purpose**                                                                                                           | **Steps**                                                                                                                                                                                                                                                                     |
+|----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **1.0 – Medication Reminder Process**        | Sends medication reminders to patients based on a predefined schedule.                                               | 1. **Query Schedule**: Retrieve upcoming medication times from the **Medication Schedule Store**.<br/>2. **Send Reminder**: For each medication time due, send a reminder notification to the **Patient**.<br/>3. **(Optional) Log Reminders**: Store record if necessary. |
+| **2.0 – Adherence Tracking Process**         | Receives and records adherence confirmations from patients. Optionally sends real-time updates to healthcare providers. | 1. **Receive Confirmation**: Accept adherence confirmation from the **Patient**.<br/>2. **Store Adherence Data**: Save adherence details in the **Adherence Records Store**.<br/>3. **Send Adherence Info**: Forward data to the **Healthcare Provider**, if configured.    |
+| **3.0 – Report Generation Process**          | Compiles adherence data into reports for healthcare providers.                                                       | 1. **Retrieve Adherence Data**: Access the **Adherence Records Store**.<br/>2. **Generate Report**: Compile the data into a structured report.<br/>3. **Store and Send Report**: Save the final report in the **Reports Archive** and deliver it to the **Healthcare Provider**. |
+| **4.0 – User Data Storing Process**          | Manages patient information; allows patients to submit personal data and healthcare providers to access it.          | 1. **Patient Data Submission**: Receive and validate data from the **Patient**; store in the **Patient Data Store** if valid.<br/>2. **Healthcare Provider Access**: Verify credentials and retrieve patient data for authorized providers.                                                                          |
+
