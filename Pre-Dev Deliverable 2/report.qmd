@@ -1,0 +1,52 @@
+---
+title: "Defined System Requirements for the Medication Adherence System"
+author:
+ - name: Tyler Sapp
+   email: sapptc@vcu.edu
+format: 
+    html:
+        theme: solar
+    pdf:
+        documentclass: article
+        pdf-engine: xelatex
+        keep-tex: true
+        toc: true
+        number-sections: true
+---
+
+# Defined System Requirements
+
+## Functional Requirements
+
+| **Req ID** | **Title**                          | **Description**                                                                                                                                                   | **Priority** |
+|------------|------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
+| **FR1**       | Medication Schedule Retrieval      | The system shall retrieve upcoming medication schedules from the Medication Schedule Store for each patient.                                                       | High         |
+| **FR2**       | Medication Reminder Dispatch       | The system shall automatically send medication reminders to patients when the scheduled time is reached.                                                           | High         |
+| **FR3**       | Adherence Confirmation Input       | The system shall receive adherence confirmation from patients, including relevant details such as timestamp and status.                                             | High         |
+| **FR4**       | Adherence Record Logging           | The system shall record each adherence confirmation in the Adherence Records Store to track when medications are taken or missed.                                    | High         |
+| **FR5**       | Report Generation                  | The system shall generate adherence reports by compiling data from the Adherence Records Store (and optionally the Patient Data Store), store the reports, and send them to the Healthcare Provider. | Medium       |
+| **FR6**       | Patient Data Submission            | The system shall allow patients to submit their personal and medical data, which will be validated and stored in the Patient Data Store.                              | High         |
+| **FR7**       | Healthcare Provider Data Access    | The system shall allow healthcare providers to securely retrieve patient data from the Patient Data Store after verifying their credentials.                       | High         |
+| **FR8**       | Reminder Logging                   | The system shall log all reminder dispatch events for auditing and troubleshooting purposes.                                                                       | Medium       |
+
+## Non-Functional Requirements
+
+| **Req ID** | **Title**              | **Description**                                                                                                                                                            | **Priority** |
+|------------|------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
+| **NFR1**      | Security & Privacy     | All data transactions must be secured via encryption and proper authentication. The system should comply with relevant regulations (e.g., HIPAA) where applicable.       | High         |
+| **NFR2**      | Performance            | The system shall deliver medication reminders and process adherence confirmations within 2 seconds of the scheduled time.                                                   | Medium       |
+| **NFR3**      | Availability           | The system shall maintain an uptime of at least 99.9%, ensuring reliable access for patients and healthcare providers.                                                     | High         |
+| **NFR4**      | Usability              | The system shall provide an intuitive, user-friendly interface that requires minimal training for both patients and healthcare providers.                                  | Medium       |
+| **NFR5**      | Scalability            | The system shall be designed to scale efficiently, accommodating an increasing number of patients and healthcare providers without performance degradation.             | Medium       |
+| **NFR6**      | Maintainability        | The system shall be developed using modular and well-documented code to facilitate ease of maintenance and future enhancements.                                           | Medium       |
+
+---
+
+### How to Use These Requirements
+
+- **Functional Requirements (FRs):**  
+  These describe the specific behaviors and functions of the system. For example, FR2 ensures that reminders are sent on time, while FR4 tracks adherence events.
+
+- **Non-Functional Requirements (NFRs):**  
+  These outline the quality attributes of the system. They address security, performance, availability, usability, scalability, and maintainability, which are critical for a system that handles sensitive healthcare data.
+
