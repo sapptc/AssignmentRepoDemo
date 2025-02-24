@@ -8,6 +8,7 @@ format:
         theme: solar
     pdf:
         documentclass: article
+        fontsize: 12pt
         pdf-engine: xelatex
         keep-tex: true
         toc: true
