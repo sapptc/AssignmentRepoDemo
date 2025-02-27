@@ -1,13 +1,19 @@
 ---
 title: "Defined System Requirements for the Medication Adherence System"
-author:
+authors:
  - name: Tyler Sapp
-   email: sapptc@vcu.edu
+ - name: Wyatt Henderson
+ - name: Ronaldo Menendez
+ - name: Gustavo Naveto
+ - name: Nick Larson
 format: 
     html:
-        theme: solar
+      theme: Morph
+      mainfont: Times New Roman
+      fontsize: 10pt
     pdf:
         documentclass: article
+        mainfont: Times New Roman
         fontsize: 12pt
         pdf-engine: xelatex
         keep-tex: true
@@ -43,6 +49,7 @@ format:
 
 ---
 
+
 ### How to Use These Requirements
 
 - **Functional Requirements (FRs):**  
@@ -51,3 +58,11 @@ format:
 - **Non-Functional Requirements (NFRs):**  
   These outline the quality attributes of the system. They address security, performance, availability, usability, scalability, and maintainability, which are critical for a system that handles sensitive healthcare data.
 
+## Use Case Diagrams
+Below are two use case diagrams. One for the functional requirements and one for the non-functional requirements. 
+
+### Functional Requirements Use Case Diagram
+![Use case diagram for functional requirements using Visual Paradigm](assets/FR%20Use%20Case%20Diagram.png)
+
+### Non-Functional Use Case Diagram
+![Use case diagram for non-functional requirements using Visual Paradigm](assets/NFR%20Use%20Case%20Diagram_1.png)

@@ -21,6 +21,7 @@
 \usepackage{lmodern}
 \ifPDFTeX\else  
     % xetex/luatex font selection
+    \setmainfont[]{Times New Roman}
 \fi
 % Use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
@@ -141,7 +142,6 @@
 \urlstyle{same} % disable monospaced font for URLs
 \hypersetup{
   pdftitle={Defined System Requirements for the Medication Adherence System},
-  pdfauthor={Tyler Sapp},
   colorlinks=true,
   linkcolor={blue},
   filecolor={Maroon},
@@ -151,7 +151,8 @@
 
 
 \title{Defined System Requirements for the Medication Adherence System}
-\author{Tyler Sapp}
+\author{Tyler Sapp \and Wyatt Henderson \and Ronaldo
+Menendez \and Gustavo Naveto \and Nick Larson}
 \date{}
 
 \begin{document}
@@ -274,6 +275,39 @@ Requirements}\label{how-to-use-these-requirements}
   maintainability, which are critical for a system that handles
   sensitive healthcare data.
 \end{itemize}
+
+\subsection{Use Case Diagrams}\label{use-case-diagrams}
+
+Below are two use case diagrams. One for the functional requirements and
+one for the non-functional requirements.
+
+\subsubsection{Functional Requirements Use Case
+Diagram}\label{functional-requirements-use-case-diagram}
+
+\begin{figure}[H]
+
+{\centering \pandocbounded{\includegraphics[keepaspectratio]{assets/FR Use Case Diagram.png}}
+
+}
+
+\caption{Use case diagram for functional requirements using Visual
+Paradigm}
+
+\end{figure}%
+
+\subsubsection{Non-Functional Use Case
+Diagram}\label{non-functional-use-case-diagram}
+
+\begin{figure}[H]
+
+{\centering \pandocbounded{\includegraphics[keepaspectratio]{assets/NFR Use Case Diagram_1.png}}
+
+}
+
+\caption{Use case diagram for non-functional requirements using Visual
+Paradigm}
+
+\end{figure}%
 
 
 
