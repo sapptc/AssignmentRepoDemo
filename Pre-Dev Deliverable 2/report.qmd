@@ -62,7 +62,7 @@ format:
 Below are two use case diagrams. One for the functional requirements and one for the non-functional requirements. 
 
 ### Functional Requirements Use Case Diagram
-![Use case diagram for functional requirements using Visual Paradigm](assets/FR%20Use%20Case%20Diagram.png)
+![Use case diagram for functional requirements using Visual Paradigm](../assets/FR%20Use%20Case%20Diagram_3.png)
 
 ### Non-Functional Use Case Diagram
 ![Use case diagram for non-functional requirements using Visual Paradigm](assets/NFR%20Use%20Case%20Diagram_1.png)
